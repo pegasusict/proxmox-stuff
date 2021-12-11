@@ -1,0 +1,5 @@
+## Limit root access to local network
+PermitRootLogin no
+# the following overrides the general config when conditions are met. 
+Match Address  192.168.1.*
+    PermitRootLogin yes
